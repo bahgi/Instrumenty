@@ -16,6 +16,11 @@ namespace Instrumenty
             Console.WriteLine("\nTak grają skrzypce: ");
             base.Play();
         }
+
+        public override void PlayOtherSound()
+        {
+            throw new NotImplementedException();
+        }
     }
 
 }

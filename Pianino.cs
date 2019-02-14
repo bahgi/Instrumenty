@@ -11,6 +11,11 @@ namespace Instrumenty
         {
             
         }
+
+        public override void PlayOtherSound()
+        {
+            throw new NotImplementedException();
+        }
     }
 
 }

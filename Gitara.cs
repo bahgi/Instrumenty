@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Instrumenty
 {
-    public class Gitara : Instrument
+    public class Gitara : Instrument, IGitara
     { 
 
         public Gitara (char sound) : base(sound)
@@ -12,7 +12,11 @@ namespace Instrumenty
             
         }
 
+        public string Pick { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
-
+        public override void PlayOtherSound()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
