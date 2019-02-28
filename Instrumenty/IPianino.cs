@@ -4,8 +4,10 @@ using System.Text;
 
 namespace Instrumenty
 {
-    interface IGitara
+    public interface IPianino
     {
-        string Pick { get; set; }
+        string Play();
+
+        void PlayOtherSound();
     }
 }
